@@ -1,0 +1,10 @@
+<h1>Create new post:</h2>
+
+<%= form_with model: @post do |form| %>
+  <%= form.label :title, "Name of your post" %><br>
+  <%= form.text_field :title %><br><br>
+  <%= form.text_area :body, size: "50x10", placeholder: "Write your post here" %><br><br>
+  <%= form.submit %>
+<% end %>
+<br>
+<%= link_to "Home page", root_path %>
